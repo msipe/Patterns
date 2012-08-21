@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Factory;
 
-namespace ConsoleApplication1 {
-  class Program {
-    static void Main(string[] args) {
-    }
+namespace Factory {
+  public class Program {
   }
 }
