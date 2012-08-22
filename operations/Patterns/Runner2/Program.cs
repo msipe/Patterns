@@ -19,6 +19,7 @@ namespace Runner2 {
 
       Console.WriteLine(factory.BuildAnimal("whale").Speak());
 
+      if(args.Any())
       Console.WriteLine(factory.BuildAnimal(args[0]).Speak());
     }
   }
