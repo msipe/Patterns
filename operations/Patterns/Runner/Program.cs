@@ -22,13 +22,14 @@ namespace Runner2 {
           break;
 
         case "builder":
-          var director = new Director();
-          var builder = director.Construct();
+          var builder = new BuilderClass();
           var locale = "";
+          var NaSpawner = new NorthAmericanSpawner();
+          var SaSpawner = new SouthAmericanSpawner();
 
           while (locale != "done") {
             locale = Console.ReadLine();
-            Console.WriteLine(locale);
+
             if (locale == "done") {
               break;
             }

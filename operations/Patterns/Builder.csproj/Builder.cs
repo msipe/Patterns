@@ -7,7 +7,6 @@ using ClassLib;
 namespace Builder {
   public class BuilderClass {
     public BuilderClass() {
-     
       NaSpawner = new NorthAmericanSpawner();
       SaSpawner = new SouthAmericanSpawner();
     }
@@ -16,7 +15,7 @@ namespace Builder {
         animals = animals + " " + NaSpawner.SpawnBeast(amount);
       }
 
-      if (locale == "SA") {
+      else if (locale == "SA") {
         animals = animals + " " + SaSpawner.SpawnBeast(amount);
       }
 
