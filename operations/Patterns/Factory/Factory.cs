@@ -40,8 +40,8 @@ namespace Factory {
       return new Messages("hi");
     }
 
-    public Anibeasts GetAnimal() {
-      return new Anibeasts();
+    public NorthAmericanSpawner GetAnimal() {
+      return new NorthAmericanSpawner();
     }
 
     public Animal BuildAnimal(string type) {
