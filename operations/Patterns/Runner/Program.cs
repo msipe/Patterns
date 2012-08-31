@@ -5,6 +5,7 @@ using System.Text;
 using Factory;
 using ClassLib;
 using Builder;
+using SingletonClass;
 
 namespace Runner2 {
   class Program {
@@ -45,16 +46,22 @@ namespace Runner2 {
           break;
 
         case "single":
-          Console.WriteLine("Yo Yo");
-          //var single = new SingletonClass();
-          Console.WriteLine("yo");
+          var msg = Console.ReadLine();
 
+          ILog log = Logger.GetInstance();
+          log.Info("hello world");
+
+          Logger.GetInstance().Info("here");
+          Logger.Instance.Info("here");
+          Logger.Info("here"); 
+          
           break;
 
         default:
           Console.WriteLine("Beep Boop");
           break;
       }
+
     }
   }
 }
