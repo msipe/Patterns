@@ -23,20 +23,32 @@ namespace Runner2 {
 
         case "builder":
           var builder = new BuilderClass();
-          var locale = "";
-          var NaSpawner = new NorthAmericanSpawner();
-          var SaSpawner = new SouthAmericanSpawner();
+          var spawner = new AnimalSpawner();
+          var flag = "";
+          var delimiters = new char[] {' '};
 
-          while (locale != "done") {
-            locale = Console.ReadLine();
+          while (flag != "done") {
+            Console.WriteLine();
+            Console.Write("Enter Animals (done to exit)");
+            flag = Console.ReadLine();
 
-            if (locale == "done") {
+            if (flag == "done") {
               break;
             }
-            var amount = Console.ReadLine();
-            builder.BuildPart(locale, int.Parse(amount));
+
+            var iterations = int.Parse(Console.ReadLine());
+          
+            spawner.GetSelection(flag.Split(delimiters));
+            Console.WriteLine(spawner.SpawnBeast(iterations));
           }
-          Console.WriteLine(builder.AssembleParts());
+
+          break;
+
+        case "single":
+          Console.WriteLine("Yo Yo");
+          //var single = new SingletonClass();
+          Console.WriteLine("yo");
+
           break;
 
         default:

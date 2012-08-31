@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalSpawner.cs" />
     <Compile Include="SouthAmericanSpawner.cs" />
     <Compile Include="NorthAmericanSpawner.cs" />
     <Compile Include="Messages.cs" />

@@ -1,0 +1,3 @@
+NA: "Boar", "Bear", "Bison", "Caribou", "Wolf"
+SA: "Python", "Jaguar", "Gecko", "Iguana", "Condor"
+Africa: "Cheetah", "Lion", "Baboon", "Hyena", "Gorilla"
