@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Runner", "Runner\Runner.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonClass", "SingletonClass\SingletonClass.csproj", "{64F5CD17-462D-41AF-8F9B-896B3D2636D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.csproj", "{7EB03A24-F1FC-40F6-848A-129890A38724}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoPattern", "Memento\MementoPattern.csproj", "{7EB03A24-F1FC-40F6-848A-129890A38724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

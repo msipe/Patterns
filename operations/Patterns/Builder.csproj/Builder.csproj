@@ -49,9 +49,9 @@
       <Project>{0D4353E1-AB9D-479B-8145-1D233C2B147B}</Project>
       <Name>ClassLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Memento\Memento.csproj">
+    <ProjectReference Include="..\Memento\MementoPattern.csproj">
       <Project>{7EB03A24-F1FC-40F6-848A-129890A38724}</Project>
-      <Name>Memento</Name>
+      <Name>MementoPattern</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

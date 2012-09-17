@@ -5,24 +5,24 @@ using System.Text;
 using Builder;
 
 namespace Runner2 {
-  public class DialogueExpiditor {
-    public DialogueExpiditor(string endPhrase) {
+  public class BuilderDialogue {
+    public BuilderDialogue(string endPhrase) {
       mEndPhrase = endPhrase;
       mSpawner = new AnimalSpawner();
+      mEnd = false;
     }
 
-    public string RetrieveAnimals() {
+    public void RetrieveAnimals() {
       var delimiters = new char[] {' '};
       Console.WriteLine();
       Console.WriteLine("Enter Animals (Type " + mEndPhrase  + " to exit)");
       mDisplay = Console.ReadLine();
       
       if (mDisplay == mEndPhrase) {
-        return mEndPhrase;
+        mEnd = true;
       }
 
       mSpawner.SetSelection(mDisplay.Split(delimiters));
-      return "";
     }
 
     public void RetrieveIterations() {
@@ -51,8 +51,16 @@ namespace Runner2 {
 
       Console.WriteLine();
       Console.WriteLine(mSpawner.SpawnBeast());
-      
     }
+
+    public bool IsEnd() {
+      if (mEnd == true) {
+        return true;
+      }
+      return false;
+    }
+
+    private bool mEnd;
     private string mDisplay;
     private string mSaved;
     private string mEndPhrase;
