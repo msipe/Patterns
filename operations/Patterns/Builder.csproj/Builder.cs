@@ -32,6 +32,4 @@ namespace Builder {
     private NorthAmericanSpawner NaSpawner;
     private SouthAmericanSpawner SaSpawner;
   }
-
-  
 }

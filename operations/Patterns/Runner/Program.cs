@@ -23,24 +23,20 @@ namespace Runner2 {
           break;
 
         case "builder":
-          var builder = new BuilderClass();
           var spawner = new AnimalSpawner();
           var flag = "";
-          var delimiters = new char[] {' '};
+          var d = new DialogueExpiditor("done");
 
           while (flag != "done") {
-            Console.WriteLine();
-            Console.Write("Enter Animals (done to exit)");
-            flag = Console.ReadLine();
+            flag = d.RetrieveAnimals();
 
             if (flag == "done") {
               break;
             }
 
-            var iterations = int.Parse(Console.ReadLine());
-          
-            spawner.GetSelection(flag.Split(delimiters));
-            Console.WriteLine(spawner.SpawnBeast(iterations));
+            d.RetrieveIterations();
+            d.SaveSelection();
+            d.DisplayAnimals();
           }
 
           break;
@@ -54,7 +50,6 @@ namespace Runner2 {
           Logger.GetInstance().Info("here");
           Logger.Instance.Info("here");
           Logger.Info("here"); 
-          
           break;
 
         default:

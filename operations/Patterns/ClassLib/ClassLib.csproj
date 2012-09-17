@@ -40,11 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AnimalSpawner.cs" />
     <Compile Include="SouthAmericanSpawner.cs" />
     <Compile Include="NorthAmericanSpawner.cs" />
     <Compile Include="Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Memento\Memento.csproj">
+      <Project>{7EB03A24-F1FC-40F6-848A-129890A38724}</Project>
+      <Name>Memento</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
